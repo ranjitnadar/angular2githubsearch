@@ -8,8 +8,8 @@ import 'rxjs/add/operator/map';
     templateUrl: 'profile.component.html'
 })
 export class ProfileComponent { 
-	user[];
-	repos[];
+	user :any;
+	repos : any;
 	constructor(private _githubservice:GithubService){
 		this._githubservice.getUser().subscribe( user => {
 			//console.log(user);
